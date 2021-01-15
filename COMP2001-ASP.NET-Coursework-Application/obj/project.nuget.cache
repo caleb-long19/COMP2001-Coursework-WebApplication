@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3xiyI3FcijrYs1gWOSxK2Oq9sB0xwS95xGUdynq1DONFelTT4/4WLIMivfDyNgY1nj9QWji6AGV18BW6BhuIjg==",
+  "success": true,
+  "projectFilePath": "E:\\GitHub Repositories\\COMP2001-Coursework-Application\\ASP.NET-Coursework-App\\COMP2001-ASP.NET-Coursework-Application\\COMP2001-ASP.NET-Coursework-Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caleb\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}
