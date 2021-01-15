@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using COMP2001_ASP.NET_Coursework_Application.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace COMP2001_ASP.NET_Coursework_Application
 {
@@ -24,6 +26,8 @@ namespace COMP2001_ASP.NET_Coursework_Application
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<COMP2001_CLongContext>(options => options.UseSqlServer(Configuration.GetConnectionString("COMP2001_CLONG")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

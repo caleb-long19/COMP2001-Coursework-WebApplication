@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-ASP.NET-Coursework-Application.csproj": {}
+    "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj": {}
   },
   "projects": {
-    "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-ASP.NET-Coursework-Application.csproj": {
+    "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-ASP.NET-Coursework-Application.csproj",
-        "projectName": "COMP2001-ASP.NET-Coursework-Application",
-        "projectPath": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-ASP.NET-Coursework-Application.csproj",
+        "projectUniqueName": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
+        "projectName": "COMP2001-Coursework-Application",
+        "projectPath": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
         "packagesPath": "C:\\Users\\caleb\\.nuget\\packages\\",
         "outputPath": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\obj\\",
         "projectStyle": "PackageReference",
@@ -50,11 +50,19 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             },
             "popper.js": {
               "target": "Package",
