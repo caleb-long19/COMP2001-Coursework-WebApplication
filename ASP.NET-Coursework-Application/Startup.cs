@@ -27,7 +27,8 @@ namespace COMP2001_ASP.NET_Coursework_Application
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<COMP2001_CLongContext>(options => options.UseSqlServer(Configuration.GetConnectionString("COMP2001_CLONG")));
+            services.AddDbContext<COMP2001_CLongContext>(options => 
+            options.UseSqlServer(Configuration.GetConnectionString("COMP2001_CLONG")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

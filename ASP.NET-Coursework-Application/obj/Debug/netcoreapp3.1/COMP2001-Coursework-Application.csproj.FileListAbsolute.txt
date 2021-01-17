@@ -178,10 +178,9 @@ E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-App
 E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001-Coursework-Application.csproj.CoreCompileInputs.cache
 E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001-Coursework-Application.MvcApplicationPartsAssemblyInfo.cache
-E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
-E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
-E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
-E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
-E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\EditUsers.cshtml.g.cs
 E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001-Coursework-Application.csprojAssemblyReference.cache
-E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
+E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Index.cshtml.g.cs
+E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\UpdateUser.cshtml.g.cs
+E:\GitHub Repositories\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\Razor\Views\Users\DeleteUser.cshtml.g.cs
