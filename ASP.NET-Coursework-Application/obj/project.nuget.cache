@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LUnyzHUn7gsWBh/3Z7dcUoHmuspd0U79/XrLYcLbAaViKCqlJ8WcepEiafcPbvrkrBykQIYTHOAD3TYMYdHN4A==",
+  "dgSpecHash": "xDyfcmLRZYUu9CzJHiuOuh0L3n10/Eb1CDcIutxGpIPhNrGMoBpHddIh5FBnEqgEd7+rWCmMOkX+Upwta10+/A==",
   "success": true,
-  "projectFilePath": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
+  "projectFilePath": "C:\\Program Files\\Ampps\\www\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caleb\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\caleb\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

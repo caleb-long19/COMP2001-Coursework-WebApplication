@@ -19,16 +19,11 @@ namespace COMP2001_ASP.NET_Coursework_Application.Controllers
 
         [HttpGet]
         [ValidateAntiForgeryToken]
-        public IActionResult ValidateUser(User user)
+        public IActionResult ValidateUser(User userValidation)
         {
-            getValidation(user);
-
-            if (getValidation(user) ==  true)
-            {
-                return StatusCode(200);
-            }
-
-            return ValidateUser(user);
+            getValidation(userValidation);
+            
+            return StatusCode(200, userValidation);
         }
 
         private bool getValidation(User userValidate)
@@ -42,16 +37,11 @@ namespace COMP2001_ASP.NET_Coursework_Application.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Register(User userRegister)
         {
-            string responseMessage = "test message";
+            string responseMessage = "User Register";
 
             register(userRegister, responseMessage);
 
-            //if ()
-            //{
-
-            //}
-
-            return StatusCode(200);
+            return StatusCode(200, responseMessage);
         }
 
         private void register(User usersRegistered, string responseMessage)
@@ -65,7 +55,7 @@ namespace COMP2001_ASP.NET_Coursework_Application.Controllers
         {
             dataAccess.Update(userid, user);
 
-            return StatusCode(204);
+            return StatusCode(204, userid);
         }
 
         //POST: Users/Delete/5
@@ -75,7 +65,7 @@ namespace COMP2001_ASP.NET_Coursework_Application.Controllers
         {
             dataAccess.Delete(userid);
 
-            return StatusCode(204);
+            return StatusCode(204, userid);
         }
     }
 }

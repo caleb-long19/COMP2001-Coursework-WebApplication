@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj": {}
+    "C:\\Program Files\\Ampps\\www\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj": {}
   },
   "projects": {
-    "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj": {
+    "C:\\Program Files\\Ampps\\www\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
+        "projectUniqueName": "C:\\Program Files\\Ampps\\www\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
         "projectName": "COMP2001-Coursework-Application",
-        "projectPath": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
+        "projectPath": "C:\\Program Files\\Ampps\\www\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\COMP2001-Coursework-Application.csproj",
         "packagesPath": "C:\\Users\\caleb\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub Repositories\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\obj\\",
+        "outputPath": "C:\\Program Files\\Ampps\\www\\COMP2001-Coursework-WebApplication\\ASP.NET-Coursework-Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caleb\\AppData\\Roaming\\NuGet\\NuGet.Config",

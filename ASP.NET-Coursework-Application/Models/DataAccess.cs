@@ -33,8 +33,12 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
                 new SqlParameter("@Email", userValidate.email.ToString()),
                 new SqlParameter("@Password", userValidate.password.ToString()));
 
+            if()
+            {
+                return true;
+            }
 
-            return true;
+            return false;
         }
 
         public void Register(User userRegisterData, string responseMessage) 
