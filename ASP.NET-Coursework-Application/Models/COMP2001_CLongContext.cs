@@ -23,11 +23,11 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {
-                #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=socem1.uopnet.plymouth.ac.uk;Database=COMP2001_CLong; User id=CLong; Password=XqlC535+");
-            }
+//            if (!optionsBuilder.IsConfigured)
+//            {
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+//                optionsBuilder.UseSqlServer("Server=socem1.uopnet.plymouth.ac.uk;Database=COMP2001_CLong;User Id=CLong; Password=XqlC535+");
+//            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -51,23 +51,21 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Passwords)
                     .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Passwords__UserI__1F2E9E6D");
+                    .HasConstraintName("FK_PassUser");
             });
 
             modelBuilder.Entity<Session>(entity =>
             {
                 entity.Property(e => e.SessionId).HasColumnName("SessionID");
 
-                entity.Property(e => e.DatePasswordIssued).HasColumnType("datetime");
+                entity.Property(e => e.DateIssued).HasColumnType("datetime");
 
                 entity.Property(e => e.UserId).HasColumnName("UserID");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Sessions)
                     .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Sessions__UserID__220B0B18");
+                    .HasConstraintName("FK_UserSession");
             });
 
             modelBuilder.Entity<User>(entity =>

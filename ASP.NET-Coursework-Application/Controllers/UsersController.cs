@@ -7,97 +7,75 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 using COMP2001_ASP.NET_Coursework_Application.Models;
+using System.Net.Http;
 
 namespace COMP2001_ASP.NET_Coursework_Application.Controllers
 {
     public class UsersController : Controller
     {
-        private readonly COMP2001_CLongContext _context;
+        
         private DataAccess dataAccess;
 
-        public UsersController(COMP2001_CLongContext context)
-        {
-            _context = context;
-        }
-
-        #region Return Indexs for pages
-        // GET: Users
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Users.ToListAsync());
-        }
-
-        public IActionResult Register()
-        {
-            return View();
-        }
-
-        public IActionResult UpdateUser()
-        {
-            return View();
-        }
-
-        public IActionResult DeleteUser()
-        {
-            return View();
-        }
-        #endregion
 
         [HttpGet]
-        public IActionResult ValidateUser(ValidateUser validateUser)
+        [ValidateAntiForgeryToken]
+        public IActionResult ValidateUser(User user)
         {
-            var rowsAffected = _context.Database.ExecuteSqlRaw("EXEC ValidateUser @UserID, @Email, @Password",
-                new SqlParameter("@Email", validateUser.Email.ToString()),
-                "@Password", validateUser.Password.ToString());
+            getValidation(user);
 
-            ViewBag.Success = rowsAffected;
+            if (getValidation(user) ==  true)
+            {
+                return StatusCode(200);
+            }
 
-            return View("Index");
+            return ValidateUser(user);
+        }
+
+        private bool getValidation(User userValidate)
+        {
+            dataAccess.Validate(userValidate);
+
+            return getValidation(userValidate);
         }
 
         [HttpPost]
-        public IActionResult Register(Register register)
+        [ValidateAntiForgeryToken]
+        public IActionResult Register(User userRegister)
         {
-            var rowsAffected = _context.Database.ExecuteSqlRaw("EXEC ValidateUser @FirstName, @LastName, @Email, @Password",
-                new SqlParameter("@FirstName", register.FirstName.ToString()),
-                "@LastName", register.LastName.ToString(),
-                "@Email", register.Email.ToString(),
-                "@Password", register.Password.ToString());
+            string responseMessage = "test message";
 
-            ViewBag.Success = rowsAffected;
+            register(userRegister, responseMessage);
 
-            return View("Register");
+            //if ()
+            //{
+
+            //}
+
+            return StatusCode(200);
+        }
+
+        private void register(User usersRegistered, string responseMessage)
+        {
+            dataAccess.Register(usersRegistered, responseMessage);
         }
 
         [HttpPut]
-        public IActionResult UpdateUser(UpdateUser updateUser)
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdateUser(int userid, User user)
         {
-            var rowsAffected = _context.Database.ExecuteSqlRaw("EXEC ValidateUser @UserID, @FirstName, @LastName, @Email, @Password",
-                new SqlParameter("@UserID", updateUser.UserID.ToString()),
-                "@FirstName", updateUser.FirstName.ToString(),
-                "@LastName", updateUser.LastName.ToString(),
-                "@Email", updateUser.Email.ToString(),
-                "@Password", updateUser.Password.ToString());
+            dataAccess.Update(userid, user);
 
-            ViewBag.Success = rowsAffected;
-
-            return View("UpdateUser");
+            return StatusCode(204);
         }
 
+        //POST: Users/Delete/5
         [HttpDelete]
-        public IActionResult DeleteUser(DeleteUser deleteUser)
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteUser(int userid)
         {
-            var rowsAffected = _context.Database.ExecuteSqlRaw("EXEC ValidateUser @UserID",
-                new SqlParameter("@UserID", deleteUser.UserID.ToString()));
+            dataAccess.Delete(userid);
 
-            ViewBag.Success = rowsAffected;
-
-            return View("DeleteUser");
+            return StatusCode(204);
         }
-
-        private bool getValidation;
-
-        private void register(string user) { }
-
     }
 }
