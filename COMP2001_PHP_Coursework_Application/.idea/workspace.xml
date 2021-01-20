@@ -19,10 +19,55 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8697a93-0b81-4e06-95fb-d03563166a5a" name="Default Changelist" comment="COMP2001 Web Application - Changelog 2 - PHP Folder Setup&#10;Additions&#10;- Added Docs Folder (Stores Diagrams)&#10;- Added Assets Folder which contains...&#10;  - CSS Folder&#10;  - IMG Folder&#10;  - JS Folder&#10;- Added Config Folder&#10;- Added Public Folder&#10;- Added src Folder which contains&#10;  - Controller Folder&#10;  - Model Folder&#10;  - View Folder&#10;  &#10;  Files might not yet show as they are currently empty!">
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-Coursework-Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-Coursework-Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.nuget.cache" afterDir="false" />
+    <list default="true" id="c8697a93-0b81-4e06-95fb-d03563166a5a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/cover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/plymlibrary.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/plymunilibrary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/resourcespage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/supprtpage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resources.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/support.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/DbContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/ASP.NET-Coursework-Application/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/ASP.NET-Coursework-Application/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/config/applicationhost.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/COMP2001-Coursework-Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/COMP2001-Coursework-Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/COMP2001-Coursework-Application.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/COMP2001-Coursework-Application.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Controllers/UsersController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/COMP2001_CLongContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/COMP2001_CLongContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/DataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/DataAccess.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/Password.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/Session.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Index.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/COMP2001_PHP_Coursework_Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/COMP2001_PHP_Coursework_Application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +89,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\COMP2001_PHP_Coursework_Application\assets\img" />
+      <recent name="C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\COMP2001_PHP_Coursework_Application\assets\css" />
       <recent name="C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\COMP2001_PHP_Coursework_Application\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\COMP2001_PHP_Coursework_Application\assets\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +116,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611040837324</updated>
-      <workItem from="1611040838359" duration="658000" />
+      <workItem from="1611040838359" duration="3613000" />
+      <workItem from="1611093040339" duration="1708000" />
+      <workItem from="1611112756343" duration="5656000" />
+      <workItem from="1611153900563" duration="9014000" />
     </task>
     <task id="LOCAL-00001" summary="COMP2001 Web Application - Changelog 2 - PHP Folder Setup&#10;Additions&#10;- Added Docs Folder (Stores Diagrams)&#10;- Added Assets Folder which contains...&#10;  - CSS Folder&#10;  - IMG Folder&#10;  - JS Folder&#10;- Added Config Folder&#10;- Added Public Folder&#10;- Added src Folder which contains&#10;  - Controller Folder&#10;  - Model Folder&#10;  - View Folder&#10;  &#10;  Files might not yet show as they are currently empty!">
       <created>1611041365734</created>
@@ -85,9 +144,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="COMP2001 Web Application - Changelog 2 - PHP Folder Setup&#10;Additions&#10;- Added Docs Folder (Stores Diagrams)&#10;- Added Assets Folder which contains...&#10;  - CSS Folder&#10;  - IMG Folder&#10;  - JS Folder&#10;- Added Config Folder&#10;- Added Public Folder&#10;- Added src Folder which contains&#10;  - Controller Folder&#10;  - Model Folder&#10;  - View Folder&#10;  &#10;  Files might not yet show as they are currently empty!" />
     <option name="LAST_COMMIT_MESSAGE" value="COMP2001 Web Application - Changelog 2 - PHP Folder Setup&#10;Additions&#10;- Added Docs Folder (Stores Diagrams)&#10;- Added Assets Folder which contains...&#10;  - CSS Folder&#10;  - IMG Folder&#10;  - JS Folder&#10;- Added Config Folder&#10;- Added Public Folder&#10;- Added src Folder which contains&#10;  - Controller Folder&#10;  - Model Folder&#10;  - View Folder&#10;  &#10;  Files might not yet show as they are currently empty!" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="358" key="#Deployment" timestamp="1611114075781">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="358" key="#Deployment/0.0.2560.1400/2560.217.1920.1040@0.0.2560.1400" timestamp="1611114075781" />
+    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1611113381602">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.217.1920.1040@0.0.2560.1400" timestamp="1611113381602" />
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1611157514594">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.217.1920.1040@0.0.2560.1400" timestamp="1611157514594" />
   </component>
 </project>

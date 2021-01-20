@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("641f491a-1898-4e4d-91bf-3257332d6dd2")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("COMP2001-Coursework-Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

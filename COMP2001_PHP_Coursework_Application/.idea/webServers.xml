@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a4a414e1-1019-4113-acdd-7fa6309c4711" name="AMPPS-Server" url="http://localhost/COMP2001-Coursework-WebApplication/COMP2001_PHP_Coursework_Application/">
+        <fileTransfer mountedRoot="C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\COMP2001_PHP_Coursework_Application" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -56,6 +56,8 @@ namespace COMP2001_ASP.NET_Coursework_Application
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllers();
             });
         }
     }

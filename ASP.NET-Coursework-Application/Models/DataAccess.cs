@@ -13,7 +13,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
+using Microsoft.Data;
 using System.Net.Http;
+using System.Data;
 
 namespace COMP2001_ASP.NET_Coursework_Application.Models
 {
@@ -30,10 +32,13 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
         public bool Validate(User userValidate)
         {
             var user = _context.Database.ExecuteSqlRaw("EXEC ValidateUser @Email, @Password",
-                new SqlParameter("@Email", userValidate.email.ToString()),
-                new SqlParameter("@Password", userValidate.password.ToString()));
+                new SqlParameter("@Email", userValidate.Email.ToString()),
+                new SqlParameter("@Password", userValidate.Password.ToString()));
+            SqlParameter returnV = _context.Add("Validated", SqlDbType.Int);
+            returnV.Direction = ParameterDirection.ReturnValue;
+            int rv = (int)returnV.Value;
 
-            if()
+            if (rv == 1)
             {
                 return true;
             }
@@ -45,10 +50,10 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
         {
 
             var User = _context.Database.ExecuteSqlRaw("EXEC Register @FirstName, @LastName, @Email, @Password",
-                new SqlParameter("@@FirstName", userRegisterData.firstname.ToString()),
-                new SqlParameter("@LastName", userRegisterData.lastname.ToString()),
-                new SqlParameter("@Email", userRegisterData.email.ToString()),
-                new SqlParameter("@Password", userRegisterData.password.ToString()));
+                new SqlParameter("@@FirstName", userRegisterData.FirstName.ToString()),
+                new SqlParameter("@LastName", userRegisterData.LastName.ToString()),
+                new SqlParameter("@Email", userRegisterData.Email.ToString()),
+                new SqlParameter("@Password", userRegisterData.Password.ToString()));
 
             return;
         }
@@ -57,10 +62,10 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
         {
             var user = _context.Database.ExecuteSqlRaw("EXEC UpdateUser @UserID, @FirstName, @LastName, @Email, @Password",
                 new SqlParameter("@UserID", userid),
-                new SqlParameter("@FirstName", userEdit.firstname.ToString()),
-                new SqlParameter("@LastName", userEdit.lastname.ToString()),
-                new SqlParameter("@Email", userEdit.email.ToString()),
-                new SqlParameter("@Password", userEdit.password.ToString()));
+                new SqlParameter("@FirstName", userEdit.FirstName.ToString()),
+                new SqlParameter("@LastName", userEdit.LastName.ToString()),
+                new SqlParameter("@Email", userEdit.Email.ToString()),
+                new SqlParameter("@Password", userEdit.Password.ToString()));
 
             return;
         }

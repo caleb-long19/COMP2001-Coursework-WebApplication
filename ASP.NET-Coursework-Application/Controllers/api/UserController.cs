@@ -2,35 +2,41 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Data.SqlClient;
 using COMP2001_ASP.NET_Coursework_Application.Models;
-using System.Net.Http;
 
-namespace COMP2001_ASP.NET_Coursework_Application.Controllers
+namespace COMP2001_ASP.NET_Coursework_Application.Controllers.api
 {
-    public class UsersController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
     {
-        
-        private DataAccess dataAccess;
+        private readonly COMP2001_CLongContext _context;
 
+        public UserController(COMP2001_CLongContext context)
+        {
+            _context = context;
+        }
+
+        private DataAccess dataAccess;
 
         [HttpGet]
         [ValidateAntiForgeryToken]
-        public IActionResult ValidateUser(User userValidation)
+        public IActionResult ValidateUser(User loginUser)
         {
-            getValidation(userValidation);
-            
-            return StatusCode(200, userValidation);
+            getValidation(loginUser);
+
+            return StatusCode(200, loginUser);
         }
 
-        private bool getValidation(User userValidate)
-        {
-            dataAccess.Validate(userValidate);
 
-            return getValidation(userValidate);
+        private bool getValidation(User loginUser)
+        {
+            dataAccess.Validate(loginUser);
+
+            return getValidation(loginUser);
         }
 
         [HttpPost]
@@ -49,7 +55,7 @@ namespace COMP2001_ASP.NET_Coursework_Application.Controllers
             dataAccess.Register(usersRegistered, responseMessage);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         [ValidateAntiForgeryToken]
         public IActionResult UpdateUser(int userid, User user)
         {
@@ -59,7 +65,7 @@ namespace COMP2001_ASP.NET_Coursework_Application.Controllers
         }
 
         //POST: Users/Delete/5
-        [HttpDelete]
+        [HttpDelete("{id}")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteUser(int userid)
         {

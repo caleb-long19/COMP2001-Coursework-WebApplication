@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>COMP2001_ASP.NET_Coursework_Application</RootNamespace>
+    <UserSecretsId>641f491a-1898-4e4d-91bf-3257332d6dd2</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,7 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\api\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
