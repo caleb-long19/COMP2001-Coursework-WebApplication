@@ -16,6 +16,8 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Data;
 using System.Net.Http;
 using System.Data;
+using System.Configuration;
+using System.Text;
 
 namespace COMP2001_ASP.NET_Coursework_Application.Models
 {
@@ -29,16 +31,26 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
             _context = context;
         }
 
+        private string connectionString = "Data Source=socem1.uopnet.plymouth.ac.uk;Initial Catalog=COMP2001_CLong;Persist Security Info=True;User ID=CLong;Password=XqlC535+";
+
         public bool Validate(User userValidate)
         {
-            var user = _context.Database.ExecuteSqlRaw("EXEC ValidateUser @Email, @Password",
-                new SqlParameter("@Email", userValidate.Email.ToString()),
-                new SqlParameter("@Password", userValidate.Password.ToString()));
-            SqlParameter returnV = _context.Add("Validated", SqlDbType.Int);
-            returnV.Direction = ParameterDirection.ReturnValue;
-            int rv = (int)returnV.Value;
+            string salt = CreateSaltHash(5);
 
-            if (rv == 1)
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("ValidateUser", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@Email", userValidate.Email.ToString()));
+            cmd.Parameters.Add(new SqlParameter("@Password", PasswordHashGenerator(userValidate.Password.ToString(), salt)));
+            cmd.Parameters.Add("@Validated", SqlDbType.Int).Direction=ParameterDirection.ReturnValue;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+            int returnValue = int.Parse(cmd.Parameters["@Validated"].Value.ToString());
+
+            if (returnValue == 1)
             {
                 return true;
             }
@@ -48,35 +60,83 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
 
         public void Register(User userRegisterData, string responseMessage) 
         {
+            string salt = CreateSaltHash(5);
 
-            var User = _context.Database.ExecuteSqlRaw("EXEC Register @FirstName, @LastName, @Email, @Password",
-                new SqlParameter("@@FirstName", userRegisterData.FirstName.ToString()),
-                new SqlParameter("@LastName", userRegisterData.LastName.ToString()),
-                new SqlParameter("@Email", userRegisterData.Email.ToString()),
-                new SqlParameter("@Password", userRegisterData.Password.ToString()));
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("Register", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@FirstName", userRegisterData.FirstName.ToString()));
+            cmd.Parameters.Add(new SqlParameter("@LastName", userRegisterData.LastName.ToString()));
+            cmd.Parameters.Add(new SqlParameter("@Email", userRegisterData.Email.ToString()));
+            cmd.Parameters.Add(new SqlParameter("@Password", PasswordHashGenerator(userRegisterData.Password.ToString(), salt)));
+            cmd.ExecuteNonQuery();
 
             return;
         }
 
-        public void Update(int userid, User userEdit) 
+        public void Update(int id, User userEdit) 
         {
-            var user = _context.Database.ExecuteSqlRaw("EXEC UpdateUser @UserID, @FirstName, @LastName, @Email, @Password",
-                new SqlParameter("@UserID", userid),
-                new SqlParameter("@FirstName", userEdit.FirstName.ToString()),
-                new SqlParameter("@LastName", userEdit.LastName.ToString()),
-                new SqlParameter("@Email", userEdit.Email.ToString()),
-                new SqlParameter("@Password", userEdit.Password.ToString()));
+            string salt = CreateSaltHash(5);
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("UpdateUser", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@UserID", id));
+            cmd.Parameters.Add(new SqlParameter("@FirstName", userEdit.FirstName.ToString()));
+            cmd.Parameters.Add(new SqlParameter("@LastName", userEdit.LastName.ToString()));
+            cmd.Parameters.Add(new SqlParameter("@Email", userEdit.Email.ToString()));
+            cmd.Parameters.Add(new SqlParameter("@Password", PasswordHashGenerator(userEdit.Password.ToString(), salt)));
+            cmd.ExecuteNonQuery();
 
             return;
         }
 
-        public void Delete (int userId)
+        public void Delete (int id)
         {
-             var user = _context.Database.ExecuteSqlRaw("EXEC DeleteUser @UserID",
-                new SqlParameter("@UserID", userId));
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("DeleteUser", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@UserID", id));
+            cmd.ExecuteNonQuery();
+            conn.Close();
 
             return;
         }
-    
+
+        #region Password Hashing Methods (Salt and Hash)
+        public static string HexToString(byte[] ba)
+        {
+            StringBuilder hex = new StringBuilder(ba.Length * 2);
+            foreach (byte b in ba)
+            {
+                hex.AppendFormat("{0:x2}", b);
+            }
+
+            return hex.ToString();
+        }
+
+        public string CreateSaltHash(int size)
+        {
+            var rng = new System.Security.Cryptography.RNGCryptoServiceProvider();
+            var buff = new Byte[size];
+            rng.GetBytes(buff);
+            return Convert.ToBase64String(buff);
+        }
+
+        public string PasswordHashGenerator(string input, string salt)
+        {
+            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(input + salt);
+            System.Security.Cryptography.SHA256Managed sha256hashstring = new System.Security.Cryptography.SHA256Managed();
+            byte[] hash = sha256hashstring.ComputeHash(bytes);
+
+            return HexToString(hash);
+        }
+        #endregion
     }
 }

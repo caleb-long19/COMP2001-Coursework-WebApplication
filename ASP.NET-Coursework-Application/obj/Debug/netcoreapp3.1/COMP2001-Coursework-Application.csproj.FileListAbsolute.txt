@@ -361,3 +361,4 @@ C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework
 C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\staticwebassets\COMP2001-Coursework-Application.StaticWebAssets.Manifest.cache
 C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\staticwebassets\COMP2001-Coursework-Application.StaticWebAssets.xml
 C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001-Coursework-Application.genruntimeconfig.cache
+C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001-Coursework-Application.csprojAssemblyReference.cache

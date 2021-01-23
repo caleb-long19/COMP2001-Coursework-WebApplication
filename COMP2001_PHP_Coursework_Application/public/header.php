@@ -22,8 +22,6 @@
 </head>
 
 
-<!-- Bootstrap core CSS -->
-<link href="../assets/css/cover.css" rel="stylesheet">
 
 <style>
     .bd-placeholder-img {
@@ -41,9 +39,8 @@
     }
 </style>
 
-
 <!-- Custom styles for this template -->
-<link href="starter-template.css" rel="stylesheet">
+<link href="../assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -70,9 +67,6 @@
         </ul>
     </div>
 </nav>
-
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>

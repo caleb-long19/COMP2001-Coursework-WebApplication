@@ -20,58 +20,72 @@ namespace COMP2001_ASP.NET_Coursework_Application.Controllers.api
             _context = context;
         }
 
-        private DataAccess dataAccess;
-
         [HttpGet]
-        [ValidateAntiForgeryToken]
-        public IActionResult ValidateUser(User loginUser)
+        public async Task<ActionResult<User>> updateUser(User user)
         {
-            getValidation(loginUser);
+            getValidation(user);
 
-            return StatusCode(200, loginUser);
+            if (getValidation(user) == true)
+            {
+                return StatusCode(200, getValidation(user));
+            }
+
+            return StatusCode(404, getValidation(user));
         }
 
-
-        private bool getValidation(User loginUser)
+        private bool getValidation(User user)
         {
-            dataAccess.Validate(loginUser);
+            DataAccess dataAccess = new DataAccess(_context);
 
-            return getValidation(loginUser);
+            dataAccess.Validate(user);
+
+            if (dataAccess.Validate(user) == true)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Register(User userRegister)
+        public async Task<IActionResult> Register(User user)
         {
-            string responseMessage = "User Register";
+            string responseMessage = "";
 
-            register(userRegister, responseMessage);
+            if (user == null)
+            {
+                return StatusCode(404);
+            }
+
+            register(user, responseMessage);
 
             return StatusCode(200, responseMessage);
         }
 
         private void register(User usersRegistered, string responseMessage)
         {
+            DataAccess dataAccess = new DataAccess(_context);
             dataAccess.Register(usersRegistered, responseMessage);
         }
 
+        // UPDATE: api/User/5
         [HttpPut("{id}")]
-        [ValidateAntiForgeryToken]
-        public IActionResult UpdateUser(int userid, User user)
+        public async Task<IActionResult> updateUser(int id, User user)
         {
-            dataAccess.Update(userid, user);
+            DataAccess dataAccess = new DataAccess(_context);
+            dataAccess.Update(id, user);
 
-            return StatusCode(204, userid);
+            return StatusCode(204, id);
         }
 
-        //POST: Users/Delete/5
+        // DELETE: api/User/5
         [HttpDelete("{id}")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeleteUser(int userid)
+        public async Task<IActionResult> deleteUser(int id)
         {
-            dataAccess.Delete(userid);
+            DataAccess dataAccess = new DataAccess(_context);
+            dataAccess.Delete(id);
 
-            return StatusCode(204, userid);
+            return StatusCode(204, id);
         }
     }
 }

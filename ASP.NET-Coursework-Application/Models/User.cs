@@ -9,7 +9,6 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
 {
     public partial class User
     {
-
         [JsonIgnore]
         public int UserId { get; set; }
         public string FirstName { get; set; }
