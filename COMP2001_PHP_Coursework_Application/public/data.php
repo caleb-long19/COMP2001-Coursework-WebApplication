@@ -2,7 +2,7 @@
 include_once 'header.php';
 ?>
 
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="resources/styles.css">
 
     <main class="container">
         <div class="starter-template text-center py-5 px-3">
@@ -39,11 +39,20 @@ include_once 'header.php';
 
     <div class="container-fluid col-12">
         <div class="row">
-            <div class="col-7">
-                <table id="libraries">
+            <div class="col-6">
+                <table class="table">
+                    <thead>
+                    <tr class="table-danger">
+                        <th scope="col">Library Name</th>
+                        <th scope="col">Address Line</th>
+                        <th scope="col">Post Code</th>
+                        <th scope="col">Latitude</th>
+                        <th scope="col">Longitude</th>
+                    </tr>
+                    </thead>
                     <tbody>
                     <?php
-                    if (($csvlibraryfile = fopen("../csv/libraries_information.csv", "r")) !== FALSE) {
+                    if (($csvlibraryfile = fopen("../public/libraryData.csv", "r")) !== FALSE) {
                         while (($csvlibrarydata = fgetcsv($csvlibraryfile, 1000, ",")) !== FALSE) {
                             $error='';
                             $colcount = count($csvlibrarydata);
@@ -59,9 +68,7 @@ include_once 'header.php';
                             }
                             switch($error) {
                                 case "Column count incorrect":
-                                    echo '<td></td>';
-                                    echo '<td></td>';
-                                    echo '<td class="error" >'.$error.'</td>';
+                                    echo '<td>class="error" >'.$error.'</td>';
                                     echo '<td></td>';
                                     echo '<td></td>';
                                     echo '<td></td>';
@@ -70,8 +77,6 @@ include_once 'header.php';
                                 case "error":
                                     echo '<td class="error">'.$csvlibrarydata[0].'</td>';
                                     echo '<td class="error">'.$csvlibrarydata[1].'</td>';
-                                    echo '<td class="error">'.$csvlibrarydata[2].'</td>';
-                                    echo '<td class="error">'.$csvlibrarydata[3].'</td>';
                                     echo '<td class="error">'.$csvlibrarydata[4].'</td>';
                                     echo '<td class="error">'.$csvlibrarydata[5].'</td>';
                                     echo '<td class="error">'.$csvlibrarydata[6].'</td>';
@@ -79,8 +84,6 @@ include_once 'header.php';
                                 default:
                                     echo '<td>'.$csvlibrarydata[0].'</td>';
                                     echo '<td>'.$csvlibrarydata[1].'</td>';
-                                    echo '<td>'.$csvlibrarydata[2].'</td>';
-                                    echo '<td>'.$csvlibrarydata[3].'</td>';
                                     echo '<td>'.$csvlibrarydata[4].'</td>';
                                     echo '<td>'.$csvlibrarydata[5].'</td>';
                                     echo '<td>'.$csvlibrarydata[6].'</td>';

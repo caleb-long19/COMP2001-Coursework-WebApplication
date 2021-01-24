@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace COMP2001_ASP.NET_Coursework_Application
+namespace COMP2001___RESTful_API
 {
     public class Program
     {

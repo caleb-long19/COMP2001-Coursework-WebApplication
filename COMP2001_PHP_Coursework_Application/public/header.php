@@ -40,12 +40,12 @@
 </style>
 
 <!-- Custom styles for this template -->
-<link href="../assets/css/styles.css" rel="stylesheet">
+<link href="resources/styles.css" rel="stylesheet">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <img src="../assets/img/book.png" alt="" width="38" height="32">
+    <img src="resources/book.png" alt="" width="38" height="32">
     <a class="navbar-brand" href="index.php">Plymouth's Libraries: Location and Information</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

@@ -11,6 +11,6 @@
 </style>
 
 <div class="footer">
-    <p>Author: Caleb Long  -  Email: caleblong199@gmail.com  -  Dataset Site: https://plymouth.thedata.place/dataset</a>
+    <p>Copyright © 2021 - Author: Caleb Long  -  Email: caleblong199@gmail.com  -  Dataset Site: https://plymouth.thedata.place/dataset</a>
     </p>
 </div>

@@ -15,7 +15,7 @@ include_once 'header.php';
 
     <div class="row g-0 bg-light position-relative">
         <div class="col-md-6 mb-md-0 p-md-4">
-            <img src="../assets/img/plymlibrary.jpg" class="w-100" alt="...">
+            <img src="resources/plymlibrary.jpg" class="w-100" alt="...">
         </div>
         <div class="col-md-6 p-4 ps-md-0">
             <h5 class="mt-0">The Plymouth Library Data Set - 2019</h5>
@@ -30,14 +30,15 @@ include_once 'header.php';
 
     <div class="row g-0 bg-light position-relative">
         <div class="col-md-6 mb-md-0 p-md-4">
-            <img src="../assets/img/plymunilibrary.png" class="w-100" alt="...">
+            <img src="resources/plymunilibrary.png" class="w-100" alt="...">
         </div>
         <div class="col-md-6 p-4 ps-md-0">
             <h5 class="mt-0">Project Vision</h5>
             <p>The vision for this project consists of creating a web based application which has the ability to display<br>
                 data on Plymouth's Libraries e.g. Names, Addresses, Longitude/Latitude etc. The only difference is that this will be displayed in a human readable format.
                 This means that you can easily understand the data being represented to you. If you wish to see this data, please visit the Library Data Page</p>
-            <a href="data.php" class="stretched-link">Library Data</a>
+            <a href="data.php" class="link">Library Data</a><br>
+            <a href="../library/index.php" class="link">View Linked Data</a>
         </div>
     </div>
 

@@ -1,50 +1,78 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using COMP2001_ASP.NET_Coursework_Application.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Data.SqlClient;
-using Microsoft.Data;
-using System.Net.Http;
 using System.Data;
-using System.Configuration;
 using System.Text;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace COMP2001_ASP.NET_Coursework_Application.Models
+#nullable disable
+
+namespace COMP2001___RESTful_API.Models
 {
-    public class DataAccess
+    public partial class DataAccess : DbContext
     {
-
-        private readonly COMP2001_CLongContext _context;
-
-        public DataAccess(COMP2001_CLongContext context)
+        public DataAccess()
         {
-            _context = context;
         }
 
-        private string connectionString = "Data Source=socem1.uopnet.plymouth.ac.uk;Initial Catalog=COMP2001_CLong;Persist Security Info=True;User ID=CLong;Password=XqlC535+";
+        public DataAccess(DbContextOptions<DataAccess> options)
+            : base(options)
+        {
+        }
+
+        public virtual DbSet<User> Users { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+//                optionsBuilder.UseSqlServer("Server=socem1.uopnet.plymouth.ac.uk;Database=COMP2001_CLong;User Id=Clong; Password=XqlC535+");
+            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AS");
+
+            modelBuilder.Entity<User>(entity =>
+            {
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasMaxLength(18)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(18)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(16)
+                    .IsUnicode(false);
+            });
+
+            OnModelCreatingPartial(modelBuilder);
+        }
 
         public bool Validate(User userValidate)
         {
-            string salt = CreateSaltHash(5);
 
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = new SqlConnection("Data Source = socem1.uopnet.plymouth.ac.uk; Initial Catalog = COMP2001_CLong; Persist Security Info = True; User ID = CLong; Password = XqlC535+");
             conn.Open();
 
             SqlCommand cmd = new SqlCommand("ValidateUser", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add(new SqlParameter("@Email", userValidate.Email.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@Password", PasswordHashGenerator(userValidate.Password.ToString(), salt)));
-            cmd.Parameters.Add("@Validated", SqlDbType.Int).Direction=ParameterDirection.ReturnValue;
+            cmd.Parameters.Add(new SqlParameter("@Password", userValidate.Password.ToString()));
+            cmd.Parameters.Add("@Validated", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
             cmd.ExecuteNonQuery();
             conn.Close();
 
@@ -58,53 +86,45 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
             return false;
         }
 
-        public void Register(User userRegisterData, string responseMessage) 
+        public void Register(User userRegisterData, out string responseMessage)
         {
             string salt = CreateSaltHash(5);
 
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open();
+            // Output parameter must be declared in advance so its direction can be set to output (output parameters are also needed to get return values)
+            SqlParameter response = new SqlParameter("@ResponseMessage", SqlDbType.VarChar, 100);
+            response.Direction = ParameterDirection.Output;
 
-            SqlCommand cmd = new SqlCommand("Register", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add(new SqlParameter("@FirstName", userRegisterData.FirstName.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@LastName", userRegisterData.LastName.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@Email", userRegisterData.Email.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@Password", PasswordHashGenerator(userRegisterData.Password.ToString(), salt)));
-            cmd.ExecuteNonQuery();
+            Database.ExecuteSqlRaw("EXEC Register @FirstName, @LastName, @Email, @Password, @ResponseMessage OUTPUT",
+                new SqlParameter("@FirstName", userRegisterData.FirstName),
+                new SqlParameter("@LastName", userRegisterData.LastName),
+                new SqlParameter("@Email", userRegisterData.Email),
+                new SqlParameter("@Password", PasswordHashGenerator(userRegisterData.Password, salt)),
+                response);
+
+            responseMessage = response.Value.ToString();  // This will contain the value that the stored procedure placed in @ResponseMessage
 
             return;
         }
 
-        public void Update(int id, User userEdit) 
+        public void Update(int id, User userEdit)
         {
+            //store random salt in salt string
             string salt = CreateSaltHash(5);
 
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open();
-
-            SqlCommand cmd = new SqlCommand("UpdateUser", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add(new SqlParameter("@UserID", id));
-            cmd.Parameters.Add(new SqlParameter("@FirstName", userEdit.FirstName.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@LastName", userEdit.LastName.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@Email", userEdit.Email.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@Password", PasswordHashGenerator(userEdit.Password.ToString(), salt)));
-            cmd.ExecuteNonQuery();
-
+            Database.ExecuteSqlRaw("EXEC UpdateUser @UserID, @FirstName, @LastName, @Email, @Password",
+                 new SqlParameter("@UserID", id),
+                 new SqlParameter("@FirstName", userEdit.FirstName),
+                 new SqlParameter("@LastName", userEdit.LastName),
+                 new SqlParameter("@Email", userEdit.Email),
+                 new SqlParameter("@Password", PasswordHashGenerator(userEdit.Password, salt)));
             return;
         }
 
-        public void Delete (int id)
+        public void Delete(int id)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open();
 
-            SqlCommand cmd = new SqlCommand("DeleteUser", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add(new SqlParameter("@UserID", id));
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            Database.ExecuteSqlRaw("EXEC DeleteUser @UserID",
+            new SqlParameter("@UserID", id));
 
             return;
         }
@@ -112,9 +132,11 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
         #region Password Hashing Methods (Salt and Hash)
         public static string HexToString(byte[] ba)
         {
+            //Build string characters
             StringBuilder hex = new StringBuilder(ba.Length * 2);
             foreach (byte b in ba)
             {
+                //apply hex format
                 hex.AppendFormat("{0:x2}", b);
             }
 
@@ -138,5 +160,7 @@ namespace COMP2001_ASP.NET_Coursework_Application.Models
             return HexToString(hash);
         }
         #endregion
+
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

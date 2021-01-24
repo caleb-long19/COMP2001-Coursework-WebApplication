@@ -5,13 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using COMP2001_ASP.NET_Coursework_Application.Models;
+using Microsoft.Extensions.Logging;
+using COMP2001___RESTful_API.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace COMP2001_ASP.NET_Coursework_Application
+namespace COMP2001___RESTful_API
 {
     public class Startup
     {
@@ -25,9 +27,9 @@ namespace COMP2001_ASP.NET_Coursework_Application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllers();
 
-            services.AddDbContext<COMP2001_CLongContext>(options => 
+            services.AddDbContext<DataAccess>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("COMP2001_CLONG")));
         }
 
@@ -38,13 +40,9 @@ namespace COMP2001_ASP.NET_Coursework_Application
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -54,8 +52,8 @@ namespace COMP2001_ASP.NET_Coursework_Application
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                name: "default",
+                pattern: "{controller=User}/{action=Index}/{name?}");
 
                 endpoints.MapControllers();
             });
