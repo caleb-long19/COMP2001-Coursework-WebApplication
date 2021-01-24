@@ -309,3 +309,4 @@ C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework
 C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001 - RESTful_API.dll
 C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001 - RESTful_API.pdb
 C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001 - RESTful_API.genruntimeconfig.cache
+C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\ASP.NET-Coursework-Application\obj\Debug\netcoreapp3.1\COMP2001 - RESTful_API.csprojAssemblyReference.cache

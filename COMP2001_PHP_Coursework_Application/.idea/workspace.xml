@@ -21,204 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="c8697a93-0b81-4e06-95fb-d03563166a5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/ASP.NET-Coursework-Application/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/ASP.NET-Coursework-Application/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/config/applicationhost.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001-Coursework-Application/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/v16/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/COMP2001-Coursework-Application.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/COMP2001-Coursework-Application.csproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/COMP2001-Coursework-Application.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Controllers/HomeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Controllers/api/UserController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/COMP2001_CLongContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Controllers/userController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Controllers/userController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/DataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/DataAccess.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/DeleteUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/ErrorViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/Register.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/UpdateUser.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/ValidateUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/Home/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/Home/Privacy.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/Shared/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/COMP2001-Coursework-Application.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/COMP2001-Coursework-Application.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/COMP2001-Coursework-Application.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Release/netcoreapp3.1/COMP2001-Coursework-Application.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Release/netcoreapp3.1/COMP2001-Coursework-Application.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Release/netcoreapp3.1/COMP2001-Coursework-Application.runtimeconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Release/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Release/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Release/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/bin/Release/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-ASP.NET-Coursework-Application.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-ASP.NET-Coursework-Application.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-ASP.NET-Coursework-Application.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-Coursework-Application.csproj.EntityFrameworkCore.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-Coursework-Application.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-Coursework-Application.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/COMP2001-Coursework-Application.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.RazorCoreGenerate.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.RazorTargetAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.RazorTargetAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.TagHelpers.input.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.TagHelpers.output.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.RazorCoreGenerate.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.RazorTargetAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.RazorTargetAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.TagHelpers.input.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.TagHelpers.output.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001-Coursework-Application.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Index.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/staticwebassets/COMP2001-ASP.NET-Coursework-Application.StaticWebAssets.Manifest.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/staticwebassets/COMP2001-ASP.NET-Coursework-Application.StaticWebAssets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/staticwebassets/COMP2001-Coursework-Application.StaticWebAssets.Manifest.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/staticwebassets/COMP2001-Coursework-Application.StaticWebAssets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-ASP.NET-Coursework-Application.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.RazorCoreGenerate.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.RazorTargetAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.RazorTargetAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.TagHelpers.input.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.TagHelpers.output.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001-Coursework-Application.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/COMP2001-Coursework-Application.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/COMP2001-Coursework-Application.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/Index.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/staticwebassets/COMP2001-Coursework-Application.StaticWebAssets.Manifest.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/staticwebassets/COMP2001-Coursework-Application.StaticWebAssets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001 - RESTful_API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001 - RESTful_API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001 - RESTful_API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001 - RESTful_API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001 - RESTful_API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001 - RESTful_API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001 - RESTful_API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001 - RESTful_API.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/book.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/book.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/plymlibrary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/plymlibrary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/plymunilibrary.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/plymunilibrary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/resourcespage.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/resourcespage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/supprtpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/supprtpage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/doc.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/libraries_information.csv" beforeDir="false" afterPath="$PROJECT_DIR$/public/libraryData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/library/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/support.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/support.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/libraryData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/public/libraryData.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +104,7 @@
       <workItem from="1611328093602" duration="6286000" />
       <workItem from="1611372809745" duration="2828000" />
       <workItem from="1611447556893" duration="7000" />
-      <workItem from="1611460163089" duration="20410000" />
+      <workItem from="1611460163089" duration="28077000" />
     </task>
     <task id="LOCAL-00001" summary="COMP2001 Web Application - Changelog 2 - PHP Folder Setup&#10;Additions&#10;- Added Docs Folder (Stores Diagrams)&#10;- Added Assets Folder which contains...&#10;  - CSS Folder&#10;  - IMG Folder&#10;  - JS Folder&#10;- Added Config Folder&#10;- Added Public Folder&#10;- Added src Folder which contains&#10;  - Controller Folder&#10;  - Model Folder&#10;  - View Folder&#10;  &#10;  Files might not yet show as they are currently empty!">
       <created>1611041365734</created>

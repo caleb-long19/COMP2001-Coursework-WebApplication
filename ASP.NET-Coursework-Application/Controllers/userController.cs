@@ -12,7 +12,7 @@ namespace COMP2001___RESTful_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[ApiKey]
+    [ApiKey]
     public class userController : ControllerBase
     {
         private readonly DataAccess database;
@@ -51,7 +51,7 @@ namespace COMP2001___RESTful_API.Controllers
         [HttpHead("Accept: application/json, application/xml")]
         [Consumes("application/json", "application/xml")]
         [Produces("application/xml", "application/json")]
-        public IActionResult Register(User user)
+        public IActionResult RegisterUser(User user)
         {
             string responseMessage = "";
 

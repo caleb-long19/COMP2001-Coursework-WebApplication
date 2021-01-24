@@ -43,18 +43,12 @@ namespace COMP2001___RESTful_API
 
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles();
-
             app.UseRouting();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=User}/{action=Index}/{name?}");
-
                 endpoints.MapControllers();
             });
         }
