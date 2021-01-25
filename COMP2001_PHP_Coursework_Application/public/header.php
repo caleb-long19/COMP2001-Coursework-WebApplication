@@ -4,6 +4,7 @@
 
 
 <head>
+    <!-- /. Links to external sources used in the website -->
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="description" content="">
@@ -28,6 +29,7 @@
 </head>
 <body>
 
+<!-- /. Nav links for each page on the website -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <img src="resources/book.png" alt="" width="38" height="32">
     <a class="navbar-brand" href="index.php">Plymouth's Libraries: Location and Information</a>

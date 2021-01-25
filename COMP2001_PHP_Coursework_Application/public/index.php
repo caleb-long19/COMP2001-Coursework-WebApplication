@@ -2,6 +2,7 @@
 include_once 'header.php';
 ?>
 
+    <!-- /. Container which contains the pages main header text to inform the user -->
     <main class="container">
         <! Provides some information for the user on the home page and provides a link to support them-->
         <div class="starter-template text-center py-5 px-3">
@@ -12,6 +13,7 @@ include_once 'header.php';
         </div>
     </main><!-- /.container -->
 
+    <!-- /. Created a card class which provides information on the data set, it also contains a link to the original data set -->
     <div class="container-fluid col-9">
         <div class="row">
             <div class="col-12">
@@ -33,6 +35,7 @@ include_once 'header.php';
 
     <br>
 
+    <!-- /. Created a card class which provides information on the project vision, it also contains links to the Data page and the entity page -->
     <div class="container-fluid col-9">
         <div class="row">
             <div class="col-12">

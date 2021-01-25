@@ -2,6 +2,7 @@
 include_once 'header.php';
 ?>
 
+    <!-- /. Support page displays information on all pages within the website and how to navigate -->
     <div class="container-fluid col-11">
         <div class="row">
             <div class="col-12">

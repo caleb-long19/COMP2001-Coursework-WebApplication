@@ -5,6 +5,7 @@ include_once 'header.php';
     <link rel="stylesheet" href="resources/styles.css">
 
 
+    <!-- /. Display text to inform the user about the page -->
     <main class="container">
         <div class="starter-template text-center py-5 px-3">
             <h1>Plymouth's Libraries: Library Data</h1>
@@ -32,6 +33,7 @@ include_once 'header.php';
         }
     </style>
 
+    <!-- /. Displays the library data csv file into the tables on the data page -->
     <div class="container-fluid col-8">
         <div class="row">
             <div class="col-12">
@@ -74,6 +76,15 @@ include_once 'header.php';
     <div class="container-fluid col-6">
         <div class="row">
             <div class="col-12">
+                <main class="container">
+                    <!-- /. Provides some information for the user on the home page and provides a link to support them -->
+                    <div class="starter-template text-center py-5 px-3">
+                        <h1>Plymouth Library Locations</h1>
+                        <p class="lead">Below is a map which displays the locations of the libraries listed above!<br>
+                        The Data is out of date as it was released in 2019, be aware that things may have changed!</p>
+                    </div>
+                </main><!-- /.container -->
+
                 <html>
                 <div id='map' style='width: 900px; height: 400px;'></div>
                 <script>
@@ -82,7 +93,7 @@ include_once 'header.php';
                         container: 'map',
                         style: 'mapbox://styles/mapbox/streets-v11',
                         center: [-4.143841, 50.376289],
-                        zoom: 11.15
+                        zoom: 10.15
                     });
 
                     map.on('load', function () {

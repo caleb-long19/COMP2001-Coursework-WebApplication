@@ -2,6 +2,7 @@
 include_once 'header.php';
 ?>
 
+    <!-- /. Resource page displays information on the 3rd party assets used on the website -->
     <div class="container-fluid col-11">
         <div class="row">
             <div class="col-12">
