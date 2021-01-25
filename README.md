@@ -21,4 +21,4 @@ https://www.plymouth.ac.uk/student-life/magazine/issue-4/plymouth-university-lib
 https://www.plymouth.ac.uk/student-life/your-studies/library
 
 ### Image Link/s for Navbar
-Navbar Book Icon
+https://commons.wikimedia.org/wiki/File:Closed_Book_Icon.svg
