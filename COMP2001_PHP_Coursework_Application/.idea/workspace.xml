@@ -20,22 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8697a93-0b81-4e06-95fb-d03563166a5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/ASP.NET-Coursework-Application/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/ASP.NET-Coursework-Application/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/COMP2001 - RESTful_API/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/DataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/Models/DataAccess.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001 - RESTful_API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001 - RESTful_API.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Debug/netcoreapp3.1/COMP2001 - RESTful_API.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001 - RESTful_API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ASP.NET-Coursework-Application/obj/Release/netcoreapp3.1/COMP2001 - RESTful_API.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resources/mystyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resources/tableData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/COMP2001_PHP_Coursework_Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/COMP2001_PHP_Coursework_Application.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/library/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libraryData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/public/libraryData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/support.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/support.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -67,7 +63,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Users/Public/Downloads/.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/resources" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,6 +75,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\COMP2001_PHP_Coursework_Application\public\resources" />
       <recent name="C:\Program Files\Ampps\www\COMP2001-Coursework-WebApplication\COMP2001_PHP_Coursework_Application\assets\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -104,7 +102,7 @@
       <workItem from="1611328093602" duration="6286000" />
       <workItem from="1611372809745" duration="2828000" />
       <workItem from="1611447556893" duration="7000" />
-      <workItem from="1611460163089" duration="49281000" />
+      <workItem from="1611460163089" duration="55534000" />
     </task>
     <task id="LOCAL-00001" summary="COMP2001 Web Application - Changelog 2 - PHP Folder Setup&#10;Additions&#10;- Added Docs Folder (Stores Diagrams)&#10;- Added Assets Folder which contains...&#10;  - CSS Folder&#10;  - IMG Folder&#10;  - JS Folder&#10;- Added Config Folder&#10;- Added Public Folder&#10;- Added src Folder which contains&#10;  - Controller Folder&#10;  - Model Folder&#10;  - View Folder&#10;  &#10;  Files might not yet show as they are currently empty!">
       <created>1611041365734</created>
