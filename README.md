@@ -22,3 +22,6 @@ https://www.plymouth.ac.uk/student-life/your-studies/library
 
 ### Image Link/s for Navbar
 https://commons.wikimedia.org/wiki/File:Closed_Book_Icon.svg
+
+### Api Key - Code Support 
+http://codingsonata.com/secure-asp-net-core-web-api-using-api-key-authentication/
