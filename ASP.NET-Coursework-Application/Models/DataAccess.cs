@@ -31,10 +31,12 @@ namespace COMP2001___RESTful_API.Models
             }
         }
 
+        string connectionstring = "Data Source = socem1.uopnet.plymouth.ac.uk; Initial Catalog = COMP2001_CLong; Persist Security Info = True; User ID = CLong; Password = XqlC535+";
+
         public bool Validate(User userValidate)
         {
 
-            SqlConnection conn = new SqlConnection("Data Source = socem1.uopnet.plymouth.ac.uk; Initial Catalog = COMP2001_CLong; Persist Security Info = True; User ID = CLong; Password = XqlC535+");
+            SqlConnection conn = new SqlConnection(connectionstring);
             conn.Open();
 
             SqlCommand cmd = new SqlCommand("ValidateUser", conn);

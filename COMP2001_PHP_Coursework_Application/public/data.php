@@ -4,6 +4,7 @@ include_once 'header.php';
 
     <link rel="stylesheet" href="resources/styles.css">
 
+
     <main class="container">
         <div class="starter-template text-center py-5 px-3">
             <h1>Plymouth's Libraries: Library Data</h1>
@@ -11,6 +12,7 @@ include_once 'header.php';
             If you wish to see the data in a larger format, please visit "Extended Library Data" Page </p>
         </div>
     </main><!-- /.container -->
+
 
     <style>
         #libraries {
@@ -35,11 +37,12 @@ include_once 'header.php';
             background-color: #4CAF50;
             color: white;
         }
-    </style>
 
-    <div class="container-fluid col-12">
+        #map { height: 180px; }
+    </style>
+    <div class="container-fluid col-11">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <table class="table">
                     <thead>
                     <tr class="table-danger">
@@ -57,30 +60,7 @@ include_once 'header.php';
                             $error='';
                             $colcount = count($csvlibrarydata);
                             echo '<tr>';
-                            if($colcount!=36) {
-                                $error = 'Column count incorrect';
-                            } else {
-                                //check data types
-                                if(!is_numeric($csvlibrarydata[0])) $error.='error';
-                                $date = date_parse($csvlibrarydata[3]);
-                                if (!($date["error_count"] == 0 && checkdate($date["month"], $date["day"], $date["year"]))) $error.='error';
-                                if(!is_numeric($csvlibrarydata[6])) $error.='error';
-                            }
                             switch($error) {
-                                case "Column count incorrect":
-                                    echo '<td>class="error" >'.$error.'</td>';
-                                    echo '<td></td>';
-                                    echo '<td></td>';
-                                    echo '<td></td>';
-                                    echo '<td></td>';
-                                    break;
-                                case "error":
-                                    echo '<td class="error">'.$csvlibrarydata[0].'</td>';
-                                    echo '<td class="error">'.$csvlibrarydata[1].'</td>';
-                                    echo '<td class="error">'.$csvlibrarydata[4].'</td>';
-                                    echo '<td class="error">'.$csvlibrarydata[5].'</td>';
-                                    echo '<td class="error">'.$csvlibrarydata[6].'</td>';
-                                    break;
                                 default:
                                     echo '<td>'.$csvlibrarydata[0].'</td>';
                                     echo '<td>'.$csvlibrarydata[1].'</td>';
@@ -97,6 +77,15 @@ include_once 'header.php';
                 </table>
             </div>
         </div>
+
+        <div id="mapid"></div>
+        <script>
+            var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+            L.tileLayer('https://api.maptiler.com/maps/streets/tiles.json?key=4KHR0xIZCyeSYJf3TnlI', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',{
+            ).addTo(mymap);
+            }
+        </script>
     </div>
 
 <?php
