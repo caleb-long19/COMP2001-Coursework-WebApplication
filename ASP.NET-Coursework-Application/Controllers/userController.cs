@@ -22,6 +22,7 @@ namespace COMP2001___RESTful_API.Controllers
             database = context;
         }
 
+        //Validate method to check if user exists in database
         [HttpGet]
         [HttpHead("Content-Type: application/json, application/xml")]
         [HttpHead("Accept: application/json, application/xml")]
@@ -36,6 +37,7 @@ namespace COMP2001___RESTful_API.Controllers
             return Ok(new { verified = "false" });
         }
 
+        //gets validation from dataaccess class
         private bool getValidation(User user)
         {
             if (database.Validate(user) == true)
@@ -46,6 +48,7 @@ namespace COMP2001___RESTful_API.Controllers
             return false;
         }
 
+        //Register method to add new user to database
         [HttpPost]
         [HttpHead("Content-Type: application/json, application/xml")]
         [HttpHead("Accept: application/json, application/xml")]
@@ -69,7 +72,7 @@ namespace COMP2001___RESTful_API.Controllers
             database.Register(usersRegistered, out responseMessage);
         }
 
-        // UPDATE: api/User/5
+        // Update method to update users in database
         [HttpPut("{id}")]
         [HttpHead("Content-Type: application/json, application/xml")]
         [HttpHead("Accept: application/json, application/xml")]
@@ -83,7 +86,7 @@ namespace COMP2001___RESTful_API.Controllers
             return StatusCode(204);
         }
 
-        // DELETE: api/User/5
+        // Delete method to Delete users in database
         [HttpDelete("{id}")]
         [HttpHead("Content-Type: application/json, application/xml")]
         [HttpHead("Accept: application/json, application/xml")]

@@ -36,19 +36,26 @@ namespace COMP2001___RESTful_API.Models
         public bool Validate(User userValidate)
         {
 
+            //Store connection of database and open it
             SqlConnection conn = new SqlConnection(connectionstring);
             conn.Open();
 
+            //Create an sql command to execute Validate User Procedure
             SqlCommand cmd = new SqlCommand("ValidateUser", conn);
             cmd.CommandType = CommandType.StoredProcedure;
+
+            //Store Email/Password values into @Email/Password
             cmd.Parameters.Add(new SqlParameter("@Email", userValidate.Email.ToString()));
             cmd.Parameters.Add(new SqlParameter("@Password", userValidate.Password.ToString()));
             cmd.Parameters.Add("@Validated", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
+
+            //Execute Procedure
             cmd.ExecuteNonQuery();
             conn.Close();
 
             int returnValue = int.Parse(cmd.Parameters["@Validated"].Value.ToString());
 
+            //Return true if return value is = 1 
             if (returnValue == 1)
             {
                 return true;
@@ -65,6 +72,7 @@ namespace COMP2001___RESTful_API.Models
             SqlParameter response = new SqlParameter("@ResponseMessage", SqlDbType.VarChar, 100);
             response.Direction = ParameterDirection.Output;
 
+            //Register Method contains a call to execute the Register Proceudre in our Database
             Database.ExecuteSqlRaw("EXEC Register @FirstName, @LastName, @Email, @Password, @ResponseMessage OUTPUT",
                 new SqlParameter("@FirstName", userRegisterData.FirstName),
                 new SqlParameter("@LastName", userRegisterData.LastName),
@@ -82,6 +90,7 @@ namespace COMP2001___RESTful_API.Models
             //store random salt in salt string
             string salt = CreateSaltHash(5);
 
+            //Delete Update contains a call to execute the UpdateUser Proceudre in our Database
             Database.ExecuteSqlRaw("EXEC UpdateUser @UserID, @FirstName, @LastName, @Email, @Password",
                  new SqlParameter("@UserID", id),
                  new SqlParameter("@FirstName", userEdit.FirstName),
@@ -91,6 +100,7 @@ namespace COMP2001___RESTful_API.Models
             return;
         }
 
+        //Delete Method contains a call to execute the DeleteUser Proceudre in our Database
         public void Delete(int id)
         {
             Database.ExecuteSqlRaw("EXEC DeleteUser @UserID",
